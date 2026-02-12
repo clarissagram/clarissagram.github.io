@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ── TOP NAV ── -->
+<nav class="ig-nav">
+  <div class="ig-nav-inner">
+    <div class="ig-logo">
+      <!-- Instagram camera icon SVG, circle properly centered -->
+      <svg viewBox="0 0 48 48" class="ig-logo-svg" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="12" ry="12" fill="none"/>
+        <rect x="3" y="3" width="42" height="42" rx="10" ry="10" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="24" r="9.5" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="36.5" cy="11.5" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="ig-logo-text">Clarissagram</span>
+    </div>
+    <div class="ig-nav-icons">
+      <button class="ig-icon-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M9.005 16.545a2.997 2.997 0 012.997-2.997A2.997 2.997 0 0115 16.545V22h7V11.543L12 2 2 11.543V22h7.005z"/></svg></button>
+      <button class="ig-icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><circle cx="10.5" cy="10.5" r="7.5"/><line x1="16" y1="16" x2="22" y2="22"/></svg></button>
+      <button class="ig-icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
+      <button class="ig-icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+      <a href="https://www.instagram.com/clarissa_and_co/" target="_blank" rel="noopener" class="ig-nav-avatar">
+        <img src="images/clarissapfp.jpg" alt="profile" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="ig-nav-avatar-fallback" style="display:none">👤</div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main class="ig-main">
+  <div class="ig-feed-col">
+
+    <!-- PROFILE HEADER -->
+    <div class="ig-profile-header">
+      <div class="ig-profile-pic-wrap" id="openValentineStory" style="cursor:pointer" title="View story">
+        <div class="ig-avatar-ring"></div>
+        <div class="ig-avatar">
+          <img src="images/pfp.jpg" alt="profile" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ig-avatar-fallback" style="display:none">👤</div>
+        </div>
+      </div>
+      <div class="ig-profile-info">
+        <div class="ig-profile-top-row">
+          <h1 class="ig-username">krm_arham</h1>
+        </div>
+        <p class="ig-display-name">Arham Siddiqui</p>
+        <div class="ig-stats-row">
+          <span><strong>3</strong> posts</span>
+          <span><strong>1,906</strong> followers</span>
+          <span><strong>1,105</strong> following</span>
+        </div>
+        <p class="ig-bio-text">bay | cal</p>
+        <!-- Following / Message buttons -->
+        <div class="ig-action-row">
+          <button class="ig-profile-btn ig-btn-follow">Following</button>
+          <button class="ig-profile-btn ig-btn-message">Message</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HIGHLIGHTS -->
+    <div class="ig-highlights-row">
+      <div class="ig-highlight" id="openHeartStory">
+        <div class="ig-highlight-ring">
+          <div class="ig-highlight-thumb">
+            <img src="images/highlights.jpg" alt="my heart" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="ig-hl-fallback" style="display:none"></div>
+          </div>
+        </div>
+        <span class="ig-highlight-label"></span>
+      </div>
+    </div>
+
+    <!-- TABS: Posts | Reposts | Tagged -->
+    <div class="ig-tab-bar">
+      <button class="ig-tab active" data-tab="posts">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3 3h7v7H3zm0 11h7v7H3zm11-11h7v7h-7zm0 11h7v7h-7z"/></svg>
+      </button>
+      <button class="ig-tab" data-tab="reposts">
+        <!-- repost icon: two arrows forming a loop -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+      </button>
+      <button class="ig-tab" data-tab="tagged">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+      </button>
+    </div>
+
+    <!-- POSTS PANEL -->
+    <div class="ig-tab-panel" id="panel-posts">
+      <div class="ig-posts-grid">
+
+        <!-- Post 1 -->
+        <div class="ig-grid-thumb" data-post="0">
+          <img src="images/birthday2.jpg" alt="post 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ig-grid-fallback" style="display:none">🖼️</div>
+          <div class="ig-grid-overlay">
+            <span class="ig-grid-like">
+                <svg viewBox="0 0 24 24" fill="white" width="18" height="18">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+                <span>128</span>
+            </span>
+           </div>
+          <div class="ig-grid-twosquares"><img src="images/twosquares.png" alt=""/></div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="ig-grid-thumb" data-post="1">
+          <img src="images/hoco.jpg" alt="post 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ig-grid-fallback" style="display:none">🖼️</div>
+          <div class="ig-grid-overlay">
+            <span class="ig-grid-like">
+                <svg viewBox="0 0 24 24" fill="white" width="18" height="18">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+                <span>94</span>
+            </span>
+           </div>
+          <div class="ig-grid-twosquares"><img src="images/twosquares.png" alt=""/></div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="ig-grid-thumb" data-post="2">
+          <img src="images/summer.jpg" alt="post 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ig-grid-fallback" style="display:none">🖼️</div>
+          <div class="ig-grid-overlay">
+            <span class="ig-grid-like">
+                <svg viewBox="0 0 24 24" fill="white" width="18" height="18">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+                <span>71</span>
+            </span>
+           </div>
+          <div class="ig-grid-twosquares"><img src="images/twosquares.png" alt=""/></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- REPOSTS PANEL -->
+    <div class="ig-tab-panel hidden" id="panel-reposts">
+      <div class="ig-posts-grid">
+        <div class="ig-grid-thumb" data-post="repost">
+          <img src="images/lego.jpg" alt="repost" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ig-grid-fallback" style="display:none">🔁</div>
+          <div class="ig-grid-overlay">
+            <span class="ig-grid-like">
+                <svg viewBox="0 0 24 24" fill="white" width="18" height="18">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+                <span>2,100</span>
+            </span>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAGGED PANEL -->
+    <div class="ig-tab-panel hidden" id="panel-tagged">
+      <div class="ig-empty-tagged">
+        <div class="ig-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><circle cx="7" cy="7" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>No Photos</h3>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ═══════════════════════════════════
+     POST MODAL (generic, filled by JS)
+════════════════════════════════════ -->
+<div class="ig-modal-overlay" id="postModal">
+  <button class="ig-modal-close" id="closePost">✕</button>
+  <div class="ig-post-modal">
+    <div class="ig-post-media">
+      <div class="ig-carousel">
+        <div class="ig-carousel-track" id="carouselTrack"></div>
+        <button class="ig-carousel-btn prev" id="carouselPrev">&#8249;</button>
+        <button class="ig-carousel-btn next" id="carouselNext">&#8250;</button>
+        <div class="ig-carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+    <div class="ig-post-details">
+      <div class="ig-post-header" id="postHeader"></div>
+      <div class="ig-post-comments-area" id="commentsArea"></div>
+      <div class="ig-post-actions">
+        <div class="ig-action-left">
+          <button class="ig-action-btn" id="likeBtn">
+            <svg class="heart-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+          <button class="ig-action-btn" id="commentFocusBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </button>
+          <button class="ig-action-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <button class="ig-action-btn" id="saveBtn">
+          <svg class="save-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        </button>
+      </div>
+      <div class="ig-post-likes" id="likesRow"></div>
+      <div class="ig-post-timestamp" id="postTimestamp"></div>
+      <div class="ig-add-comment">
+        <span class="ig-emoji-trigger">😊</span>
+        <input type="text" placeholder="Add a comment…" class="ig-comment-input" id="commentInput" maxlength="200"/>
+        <button class="ig-post-btn" id="submitComment">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     VALENTINE STORY (profile pic click)
+     Multi-slide: intro slides → question
+════════════════════════════════════ -->
+<div class="ig-story-overlay" id="valentineStoryModal">
+  <div class="ig-story-wrap">
+    <div class="ig-story-progress-bar" id="valProgressBar"></div>
+    <div class="ig-story-header">
+      <div class="ig-story-user-info">
+        <div class="ig-story-avatar">
+          <img src="images/pfp.jpg" alt="profile" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div style="display:none">👤</div>
+        </div>
+        <span class="ig-story-uname">krm_arham</span>
+        <span class="ig-story-time">2h</span>
+      </div>
+      <button class="ig-story-x" id="closeValentineStory">✕</button>
+    </div>
+    <div class="val-slides-wrap" id="valSlidesWrap">
+      <!-- injected by JS -->
+    </div>
+    <div class="story-tap-prev" id="valTapPrev"></div>
+    <div class="story-tap-next" id="valTapNext"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+    HIGHLIGHT STORY
+════════════════════════════════════ -->
+<div class="ig-story-overlay" id="heartStoryModal">
+  <div class="ig-story-wrap">
+    <div class="ig-story-progress-bar" id="heartProgressBar"></div>
+    <div class="ig-story-header">
+        <div class="ig-story-user-info">
+        <div class="ig-story-avatar">
+            <img src="images/highlights.jpg" alt="profile" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div style="display:none">👤</div>
+        </div>
+        <span class="ig-story-uname"></span>
+        <span class="ig-story-time">2h</span>
+        </div>
+        <button class="ig-story-x" id="closeHeartStory">✕</button>
+    </div>
+    <div class="heart-story-slides" id="heartSlides"></div>
+    <div class="story-tap-prev" id="storyTapPrev"></div>
+    <div class="story-tap-next" id="storyTapNext"></div>
+  </div>
+</div>
+
+<!-- click-to-see-post popup -->
+<div class="see-post-popup" id="seePostPopup">
+  <a href="YOUR_POST_LINK" target="_blank" rel="noopener">see post &rsaquo;</a>
+</div>
+
+<!-- Dark mode toggle -->
+<button class="ig-theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+
+<audio id="bgMusic" loop><source src="music.mp3" type="audio/mpeg"/></audio>
+<!--<audio id="postMusic" loop><source src="post-music.mp3" type="audio/mpeg"/></audio>-->
+<audio id="postMusic" loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
