@@ -9,7 +9,7 @@ const POSTS = [
   {
     id: 0,
     music: 'audio/whenyouregone.mp3',
-    images: ['images/birthday2.jpg', 'images/beach3.jpg', 'images/thanksgiving.jpg','images/sunset.jpg','images/weeknd.jpg', 'images/sidaks.jpg', 'images/promposal.jpg', 'images/prom.jpg', 'images/home3.jpg', 'images/play2.jpg', 'images/game.jpg', 'images/college.jpg', 'images/ditchday.jpg', 'images/birthday.jpg', 'images/college2.jpg', 'images/grad2.jpg', 'images/home2.jpg', 'images/botc.jpg', 'images/home.jpg'],
+    images: ['images/birthday2.jpg', 'images/beach3.jpg', 'images/thanksgiving.jpg','images/sunset.jpg','images/weeknd.jpg', 'images/sidaks.jpg', 'images/promposal.jpg', 'images/prom.jpg', 'images/home3.jpg', 'images/play2.jpg', 'images/game.jpg', 'images/college.jpg', 'images/ditchday.jpg', 'images/birthday.jpg', 'images/college2.jpg', 'images/grad2.jpg', 'images/home2.jpg', 'images/botc.jpg'],
     username: 'krm_arham',
     displayName: '🎵 When You\'re Gone - The Cranberries',
     avatar: 'images/pfp.jpg',
